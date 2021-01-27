@@ -7,6 +7,7 @@ import { TicketUpdatedListener } from './events/listeners/ticket-updated-listene
 import { natsWrapper } from './nats-wrapper'
 
 const start = async () => {
+  console.log('starting')
   console.log('Starting orders service...')
 
   if (!process.env.JWT_KEY) {
